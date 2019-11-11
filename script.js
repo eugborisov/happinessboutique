@@ -12,6 +12,11 @@ $(document).ready(function() {
     });
   }
 
+  $('.menu-icon').click(function(){
+    let attr = $('.mobile-menu').attr('aria-expanded') ==='true';
+    $('.mobile-menu').attr('aria-expanded', !attr);
+  });
+
   $('.filters .dropdown-item').click(function(e) {
     e.preventDefault();
     let name = $(this).children('.filters_name').text();
