@@ -4,15 +4,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happiness Boutique</title>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="scss/custom.css">
   </head>
   <body>
     <header>
-      <img src="images/logo.png" alt="logo">
+      <div class="flex-100">
+          <img class="logo" src="images/logo.png" alt="logo">
+          <div class="profile">
+            <a href="#">DE</a>
+            <a href="#"><img src="images/heart@2x.png" alt=""> 0</a>
+            <a href="#"><img src="images/shopping-cart@2x.png" alt=""> 1</a>
+            <a href="#"><img src="images/profile@2x.png" alt=""></a>
+            <a href="#"><img src="images/search@2x.png" alt=""></a>
+          </div>
+      </div>
       <nav class="desktop">
         <ul class="nav">
           <li class="nav-item dropdown">
@@ -24,7 +33,7 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Style</a>
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Collection</a>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="#">Action</a>
               <a class="dropdown-item" href="#">Another action</a>
@@ -32,7 +41,15 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Necklace</a>
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Trending</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Necklaces</a>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="#">Action</a>
               <a class="dropdown-item" href="#">Another action</a>
@@ -63,15 +80,40 @@
               <a class="dropdown-item" href="#">Something else here</a>
             </div>
           </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Jewelry Set</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Shop Instagram</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Happy Gallery</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Style</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
         </ul>
       </nav>
-      <div class="profile">
-        <img src="images/heart.svg" alt="">
-        <img src="images/heart.svg" alt="">
-        <img src="images/heart.svg" alt="">
-        <img src="images/heart.svg" alt="">
-        <img src="images/heart.svg" alt="">
-      </div>
     </header>
     <div class="mobile-menu" aria-expanded="false">
       <div class="subheader">
@@ -84,20 +126,20 @@
         <img src="images/heart.svg"/>
       </div>
       <ul>
-        <li class="bb"><img src="images/heart.svg"/> My Account</li>
-        <li class="bb"><img src="images/heart.svg"/> English</li>
-        <li class="bb"><img src="images/heart.svg"/> EUR Currency</li>
-        <li><img src="images/heart.svg"/> New</li>
-        <li><img src="images/heart.svg"/> Collection</li>
-        <li><img src="images/heart.svg"/> Trending</li>
-        <li><img src="images/heart.svg"/> Necklaces</li>
-        <li><img src="images/heart.svg"/> Earrings</li>
-        <li><img src="images/heart.svg"/> Bracelets</li>
-        <li><img src="images/heart.svg"/> Rings</li>
-        <li><img src="images/heart.svg"/> Jewelry Set</li>
-        <li><img src="images/heart.svg"/> Shop Instagram</li>
-        <li><img src="images/heart.svg"/> Happy Gallery</li>
-        <li><img src="images/heart.svg"/> Sale</li>
+        <li class="bb"><div><img src="images/user@2x.png"/></div> My Account</li>
+        <li class="bb"><div><img src="images/united-kingdom@2x.png"/></div> English</li>
+        <li class="bb"><div><img src="images/coin@2x.png"/></div> EUR Currency</li>
+        <li><div><img src="images/sun@2x.png"/></div> New</li>
+        <li><div><img src="images/shopping-bag@2x.png"/></div> Collection</li>
+        <li><div><img src="images/trending@2x.png"/></div> Trending</li>
+        <li><div><img src="images/necklace@2x.png"/></div> Necklaces</li>
+        <li><div><img src="images/two-earrings@2x.png"/></div> Earrings</li>
+        <li><div><img src="images/bracelet@2x.png"/></div> Bracelets</li>
+        <li><div><img src="images/diamond-ring@2x.png"/></div> Rings</li>
+        <li><div><img src="images/group@2x.png"/></div> Jewelry Set</li>
+        <li><div><img src="images/instagram@2x.png"/></div> Shop Instagram</li>
+        <li><div><img src="images/happygallery.png"/></div> Happy Gallery</li>
+        <li><div><img src="images/offer@2x.png"/></div> Sale</li>
       </ul>
     </div>
     <div class="container">
@@ -235,9 +277,9 @@
       <div class="grid">
         <div class="grid_item">
           <span class="badge red">sale</span>
-          <img src="images/product1.png">
+          <img src="images/heart-and-pearl-layered-necklace-silver.jpg">
           <div class="grid_title">
-            <span>Sea Shell Necklace and Bracelet Set</span>
+            <span>Sea Shell Necklace Let's Have a Long Name so It Takes Two Rows</span>
             <img src="images/heart.svg">
           </div>
           <div class="grid_price">
@@ -247,7 +289,7 @@
         </div>
         <div class="grid_item">
           <span class="badge"></span>
-          <img src="images/product1.png">
+          <img src="images/heart-and-pearl-layered-necklace-silver.jpg">
           <div class="grid_title">
             <span>Sea Shell Necklace and Bracelet Set</span>
             <img src="images/heart.svg">
@@ -256,9 +298,9 @@
             <span class="just-price">22,90</span>
           </div>
         </div>
-        <div class="grid_item big">
+        <div class="grid_item">
           <span class="badge"></span>
-          <img src="images/product_big.png">
+          <img src="images/heart-and-pearl-layered-necklace-silver.jpg">
           <div class="grid_title">
             <span>Sea Shell Necklace and Bracelet Set</span>
             <img src="images/heart.svg">
@@ -270,7 +312,7 @@
         </div>
         <div class="grid_item">
           <span class="badge yellow">new</span>
-          <img src="images/product1.png">
+          <img src="images/heart-and-pearl-layered-necklace-silver.jpg">
           <div class="grid_title">
             <span>Sea Shell Necklace and Bracelet Set</span>
             <img src="images/heart.svg">
@@ -282,7 +324,7 @@
         </div>
         <div class="grid_item">
           <span class="badge blue">only x left!</span>
-          <img src="images/product1.png">
+          <img src="images/heart-and-pearl-layered-necklace-silver.jpg">
           <div class="grid_title">
             <span>Sea Shell Necklace and Bracelet Set</span>
             <img src="images/heart.svg">
@@ -294,7 +336,7 @@
         </div>
         <div class="grid_item">
           <span class="badge"></span>
-          <img src="images/product1.png">
+          <img src="images/heart-and-pearl-layered-necklace-silver.jpg">
           <div class="grid_title">
             <span>Sea Shell Necklace and Bracelet Set</span>
             <img src="images/heart.svg">
@@ -306,7 +348,7 @@
         </div>
         <div class="grid_item">
           <span class="badge grey">out of stock</span>
-          <img src="images/product1.png">
+          <img src="images/heart-and-pearl-layered-necklace-silver.jpg">
           <div class="grid_title">
             <span>Sea Shell Necklace and Bracelet Set</span>
             <img src="images/heart.svg">
@@ -364,7 +406,7 @@
             <img src="images/carousel4.png" alt="">
           </div>
           <div class="carousel_item">
-            <img src="images/product1.png" alt="">
+            <img src="images/heart-and-pearl-layered-necklace-silver.jpg" alt="">
           </div>
           <div class="carousel_item">
             <img src="images/product2.png" alt="">
@@ -386,41 +428,74 @@
     </div>
     <footer>
       <div class="footer_flex">
-        <div class="footer_logo">
-          <img src="images/logo.png" alt="logo">
-          <p>Fusce vehicula dolor<br> arcu, sit amet.</p>
+        <div class="logo-container">
+          <div class="footer_logo">
+            <img src="images/logo.png" alt="logo">
+            <p>Fusce vehicula dolor<br> arcu, sit amet.</p>
+          </div>
+          <div class="flex mobile-social">
+            <a href="#"><img class="facebook" src="images/facebook-logo@2x.png" alt=""></a>
+            <a href="#"><img class="instagram" src="images/instagram-logo@2x.png" alt=""></a>
+            <a href="#"><img class="pinterest" src="images/pinterest-logo@2x.png" alt=""></a>
+            <a href="#"><img class="youtube" src="images/youtube-symbol@2x.png" alt=""></a>
+          </div>
         </div>
         <div class="footer_links">
-          <ul>
-            <li><a href="#">contact</a></li>
-            <li><a href="#">our store</a></li>
-            <li><a href="#">careers</a></li>
-          </ul>
-          <ul>
-            <li><a href="#">faq</a></li>
-            <li><a href="#">delivery</a></li>
-            <li><a href="#">payment</a></li>
-          </ul>
-          <ul>
-            <li><a href="#">blog</a></li>
-            <li><a href="#">sale</a></li>
-            <li><a href="#">partnership</a></li>
-          </ul>
+          <div class="vflex">
+            <h3>customer care</h3>
+            <div class="lists">
+              <ul>
+                <li><a href="#">Shipping & Delivery</a></li>
+                <li><a href="#">Returns & Exchanges</a></li>
+                <li><a href="#">Reward Program</a></li>
+                <li><a href="#">Brand Ambassador Program</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Order Status</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Chat with Customer Care</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="vflex">
+            <h3>about us</h3>
+            <div class="lists">
+              <ul>
+                <li><a href="#">Our Quality</a></li>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Our tree project</a></li>
+                <li><a href="#">Give back via kiva.org</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Our Collections</a></li>
+                <li><a href="#">Join our team</a></li>
+                <li><a href="#">Designers wanted!</a></li>
+                <li><a href="#">Bloggers</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="footer_social">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Ei-sc-facebook.svg" alt="">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Ei-sc-facebook.svg" alt="">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Ei-sc-facebook.svg" alt="">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Ei-sc-facebook.svg" alt="">
+          <h3>social</h3>
+          <div class="links">
+            <a href="#"><img class="facebook" src="images/facebook-logo@2x.png" alt=""></a>
+            <a href="#"><img class="instagram" src="images/instagram-logo@2x.png" alt=""></a>
+            <a href="#"><img class="pinterest" src="images/pinterest-logo@2x.png" alt=""></a>
+            <a href="#"><img class="youtube" src="images/youtube-symbol@2x.png" alt=""></a>
+          </div>
         </div>
       </div>
       <div class="footer_copyright">
         <span>© 2019 All rights reserved</span>
         <nav>
+          <a href="#">Sitemap</a>
+          <a href="#">Terms and Conditions</a>
           <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Servise</a>
+          <a href="#">Legal Notice</a>
         </nav>
       </div>
+      <button type="button" class="up">&#x2303</button>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

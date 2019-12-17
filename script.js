@@ -67,4 +67,19 @@ $(document).ready(function() {
     }
   ]
   });
+
+  if ($(window).width() > 768) {
+    $(window).scroll(function() {
+      if ($(window).scrollTop() > 600) {
+        $('.up').show();
+      } else {
+        $('.up').hide();
+      }
+    });
+  }
+
+  $('.up').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
+  });
 });
