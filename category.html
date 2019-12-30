@@ -8,18 +8,27 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
     <link rel="stylesheet" href="scss/custom.css">
   </head>
   <body>
     <header>
       <div class="flex-100">
           <img class="logo" src="images/logo.png" alt="logo">
-          <div class="profile">
+            <form class="form-inline desktop-search">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+          <div class="profile-desktop">
             <a href="#">DE</a>
-            <a href="#"><img src="images/heart@2x.png" alt=""> 0</a>
-            <a href="#"><img src="images/shopping-cart@2x.png" alt=""> 1</a>
-            <a href="#"><img src="images/profile@2x.png" alt=""></a>
-            <a href="#"><img src="images/search@2x.png" alt=""></a>
+            <a href="#"><img src="images/heart@3x.png" alt=""> 0</a>
+            <a href="#"><img src="images/shopping-cart@3x.png" alt=""> 1</a>
+            <a href="#"><img src="images/profile@3x.png" alt=""></a>
+            <a href="#" class="search-icon"><img src="images/search@2x.png" alt=""></a>
+          </div>
+          <div class="profile-mobile">
+            <a href="#"><img src="images/heart@3x.png" alt=""></a>
+            <a href="#"><img src="images/profile@3x.png" alt=""></a>
+            <a href="#"><img src="images/shopping-cart@3x.png" alt=""></a>
           </div>
       </div>
       <nav class="desktop">
@@ -123,7 +132,10 @@
           <span></span>
           <span></span>
         </div>
-        <img src="images/heart.svg"/>
+        <form class="form-inline mobile-search input-group-sm">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+        <a href="#" class="search-icon"><img src="images/search@3x.png"/></a>
       </div>
       <ul>
         <li class="bb"><div><img src="images/user@2x.png"/></div> My Account</li>
@@ -178,19 +190,13 @@
       </nav>
       <div class="filters">
         <div class="price">
-          <span>price</span>
-        <!--  <ul id="ul_layered_price_0" class="layered_content clearfix">
-
-
-              <li class="layered_slider_container">
-                <div id="layered_price_slider" class="layered_slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false">
-                  <span class="range_label from"><span class="money"><abbr class="iso-code">EUR</abbr><abbr class="sign-before hidden">€</abbr><span class="spacer-before hidden">&nbsp;</span><span class="amount" data-amount="11">11,00</span><span class="spacer-after">&nbsp;</span><abbr class="sign-after">€</abbr></span></span>
-                  <span class="range_label to"><span class="money"><abbr class="iso-code">EUR</abbr><abbr class="sign-before hidden">€</abbr><span class="spacer-before hidden">&nbsp;</span><span class="amount" data-amount="30">30,00</span><span class="spacer-after">&nbsp;</span><abbr class="sign-after">€</abbr></span></span>
-                <div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 0%; width: 100%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 100%;"></a></div>
-              </li>
-
-                                </ul> -->
-       </div>
+          <span class="name">price</span>
+          <div class="range-slider-container">
+            <span class="price-value" id="from"></span>
+            <input type="text" class="js-range-slider" name="my_range" value="" />
+            <span class="price-value" id="to"></span>
+          </div>
+        </div>
         <div class="dropdown">
           <button class="btn dropdown-toggle" type="button" id="colorMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             color
@@ -208,27 +214,27 @@
             style
           </button>
           <div class="dropdown-menu" aria-labelledby="styleMenuButton">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="styleCheck1">
-              <label class="form-check-label" for="styleCheck1">
+            <div class="custom-control custom-checkbox">
+              <input class="custom-control-input" type="checkbox" value="" id="styleCheck1">
+              <label class="custom-control-label" for="styleCheck1">
                 Modern Geometric
               </label>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="styleCheck2">
-              <label class="form-check-label" for="styleCheck2">
+            <div class="custom-control custom-checkbox">
+              <input class="custom-control-input" type="checkbox" value="" id="styleCheck2">
+              <label class="custom-control-label" for="styleCheck2">
                 Minimalist Style
               </label>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="styleCheck3">
-              <label class="form-check-label" for="styleCheck3">
+            <div class="custom-control custom-checkbox">
+              <input class="custom-control-input" type="checkbox" value="" id="styleCheck3">
+              <label class="custom-control-label" for="styleCheck3">
                 Feminine Classy
               </label>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="styleCheck4">
-              <label class="form-check-label" for="styleCheck4">
+            <div class="custom-control custom-checkbox">
+              <input class="custom-control-input" type="checkbox" value="" id="styleCheck4">
+              <label class="custom-control-label" for="styleCheck4">
                 Timeless & Neutral Colors
               </label>
             </div>
@@ -239,21 +245,21 @@
             top trends
           </button>
           <div class="dropdown-menu" aria-labelledby="trendsMenuButton">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="trendsCheck1">
-              <label class="form-check-label" for="trendsCheck1">
+            <div class="custom-control custom-checkbox">
+              <input class="custom-control-input" type="checkbox" value="" id="trendsCheck1">
+              <label class="custom-control-label" for="trendsCheck1">
                 Rose Gold Jewellery
               </label>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="trendsCheck2">
-              <label class="form-check-label" for="trendsCheck2">
+            <div class="custom-control custom-checkbox">
+              <input class="custom-control-input" type="checkbox" value="" id="trendsCheck2">
+              <label class="custom-control-label" for="trendsCheck2">
                 Futuristic Geometric
               </label>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="trendsCheck3">
-              <label class="form-check-label" for="trendsCheck3">
+            <div class="custom-control custom-checkbox">
+              <input class="custom-control-input" type="checkbox" value="" id="trendsCheck3">
+              <label class="custom-control-label" for="trendsCheck3">
                 Crescent Moon & Star
               </label>
             </div>
@@ -264,9 +270,9 @@
             sort by newest
           </button>
           <div class="dropdown-menu" aria-labelledby="sortMenuButton">
-            <a class="dropdown-item" href="#">Price: lowest first</a>
-            <a class="dropdown-item" href="#">Price: higest first</a>
-            <a class="dropdown-item" href="#">In-stock first</a>
+            <a class="dropdown-item filter-item" href="#">Price: lowest first</a>
+            <a class="dropdown-item filter-item" href="#">Price: higest first</a>
+            <a class="dropdown-item filter-item" href="#">In-stock first</a>
           </div>
         </div>
       </div>
@@ -275,6 +281,18 @@
         </ul>
       </div>
       <div class="grid">
+        <div class="grid_item big">
+          <span class="badge yellow">new</span>
+          <img class="product-image" src="images/big.jpg">
+            <div class="grid_title">
+              <span>Sea Shell Necklace and Bracelet Set</span>
+              <img src="images/heart.svg">
+            </div>
+            <div class="grid_price">
+              <span class="old-price">22,90</span>
+              <span class="new-price">22,90</span>
+            </div>
+        </div>
         <div class="grid_item">
           <span class="badge red">sale</span>
           <img src="images/heart-and-pearl-layered-necklace-silver.jpg">
@@ -336,6 +354,18 @@
         </div>
         <div class="grid_item">
           <span class="badge"></span>
+          <img src="images/heart-and-pearl-layered-necklace-silver.jpg">
+          <div class="grid_title">
+            <span>Sea Shell Necklace and Bracelet Set</span>
+            <img src="images/heart.svg">
+          </div>
+          <div class="grid_price">
+            <span class="old-price">22,90</span>
+            <span class="new-price">22,90</span>
+          </div>
+        </div>
+        <div class="grid_item">
+          <span class="badge grey">out of stock</span>
           <img src="images/heart-and-pearl-layered-necklace-silver.jpg">
           <div class="grid_title">
             <span>Sea Shell Necklace and Bracelet Set</span>
@@ -501,6 +531,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
