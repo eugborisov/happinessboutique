@@ -113,6 +113,16 @@ $(document).ready(function() {
   ]
   });
 
+  $('.home-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    arrows: false,
+    dots: true,
+    pauseOnDotsHover: true
+  });
+
   if ($(window).width() > 768) {
     $(window).scroll(function() {
       if ($(window).scrollTop() > 600) {

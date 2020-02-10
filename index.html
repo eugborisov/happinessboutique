@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Happiness Boutique</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+    <link rel="stylesheet" href="scss/custom.css">
+    <link rel="stylesheet" href="scss/home.css">
+  </head>
+  <body>
+    <header>
+      <div class="flex-100">
+          <img class="logo" src="images/logo.png" alt="logo">
+            <form class="form-inline desktop-search">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+          <div class="profile-desktop">
+            <a href="#">DE</a>
+            <a href="#"><img src="images/heart@3x.png" alt=""> 0</a>
+            <a href="#"><img src="images/shopping-cart@3x.png" alt=""> 1</a>
+            <a href="#"><img src="images/profile@3x.png" alt=""></a>
+            <a href="#" class="search-icon"><img src="images/search@2x.png" alt=""></a>
+          </div>
+          <div class="profile-mobile">
+            <a href="#"><img src="images/heart@3x.png" alt=""></a>
+            <a href="#"><img src="images/profile@3x.png" alt=""></a>
+            <a href="#"><img src="images/shopping-cart@3x.png" alt=""></a>
+          </div>
+      </div>
+      <nav class="desktop">
+        <ul class="nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">New</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Collection</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Trending</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Necklaces</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Rings</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Bracelets</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Earings</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Jewelry Set</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Shop Instagram</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Happy Gallery</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Style</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="mobile-menu" aria-expanded="false">
+      <div class="subheader">
+        <div class="menu-icon">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <form class="form-inline mobile-search input-group-sm">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+        <a href="#" class="search-icon"><img src="images/search@3x.png"/></a>
+      </div>
+      <ul>
+        <li class="bb"><div><img src="images/user@2x.png"/></div> My Account</li>
+        <li class="bb"><div><img src="images/united-kingdom@2x.png"/></div> English</li>
+        <li class="bb"><div><img src="images/coin@2x.png"/></div> EUR Currency</li>
+        <li><div><img src="images/sun@2x.png"/></div> New</li>
+        <li><div><img src="images/shopping-bag@2x.png"/></div> Collection</li>
+        <li><div><img src="images/trending@2x.png"/></div> Trending</li>
+        <li><div><img src="images/necklace@2x.png"/></div> Necklaces</li>
+        <li><div><img src="images/two-earrings@2x.png"/></div> Earrings</li>
+        <li><div><img src="images/bracelet@2x.png"/></div> Bracelets</li>
+        <li><div><img src="images/diamond-ring@2x.png"/></div> Rings</li>
+        <li><div><img src="images/group@2x.png"/></div> Jewelry Set</li>
+        <li><div><img src="images/instagram@2x.png"/></div> Shop Instagram</li>
+        <li><div><img src="images/happygallery.png"/></div> Happy Gallery</li>
+        <li><div><img src="images/offer@2x.png"/></div> Sale</li>
+      </ul>
+    </div>
+    <div class="home-slider">
+      <div class="slide">
+        <div class="slide-background" id="background-1">
+          <div class="container">
+            <h1>Fusce vehicula dolor arcu amet</h1>
+            <span class="line"></span>
+            <span class="subheader">Scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. </span>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide-background" id="background-2">
+          <div class="container">
+            <h1>The second slide heading</h1>
+            <span class="line"></span>
+            <span class="subheader">The second slide subheading</span>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide-background" id="background-3">
+          <div class="container">
+            <h1>The third slide heading</h1>
+            <span class="line"></span>
+            <span class="subheader">The third slide subheading</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="home-text">
+        Happiness Boutique's style is modern classic with a charming vintage touch.
+      </div>
+      <h2>Recent products</h2>
+      <p>Add our new arrivals to your weekly lineup.</p>
+      <div class="grid">
+        <div class="grid_item">
+          <span class="badge red">sale</span>
+          <img src="images/product2.png">
+          <div class="grid_title">
+            <span>Sea Shell Necklace Let's Have a Long Name so It Takes Two Rows</span>
+            <img src="images/heart.svg">
+          </div>
+          <div class="grid_price">
+            <span class="old-price">22,90</span>
+            <span class="new-price">22,90</span>
+          </div>
+        </div>
+        <div class="grid_item">
+          <span class="badge red">sale</span>
+          <img src="images/product2.png">
+          <div class="grid_title">
+            <span>Glam Crystal Glass Tassel Earrings</span>
+            <img src="images/heart.svg">
+          </div>
+          <div class="grid_price">
+            <span class="old-price">22,90</span>
+            <span class="new-price">22,90</span>
+          </div>
+        </div>
+        <div class="grid_item">
+          <img src="images/product2.png">
+          <div class="grid_title">
+            <span>Star Moon Ring Rose Gold</span>
+            <img src="images/heart.svg">
+          </div>
+          <div class="grid_price">
+            <span class="just-price">22,90</span>
+          </div>
+        </div>
+        <div class="grid_item">
+          <span class="badge red">sale</span>
+          <img src="images/product2.png">
+          <div class="grid_title">
+            <span>Rhinestone Cross Ring</span>
+            <img src="images/heart.svg">
+          </div>
+          <div class="grid_price">
+            <span class="old-price">22,90</span>
+            <span class="new-price">22,90</span>
+          </div>
+        </div>
+      </div>
+      <h2>Our collections</h2>
+      <div class="flex" style="margin-bottom: 120px">
+        <div class="collection-item" id="collection-1">
+          <div class="hover">
+            <h3>Lorem ipsum dolor</h3>
+          </div>
+        </div>
+        <div class="vflex" style="height: 574px; justify-content: space-between; align-items: flex-end">
+          <div class="collection-item" id="collection-2">
+            <div class="hover">
+              <h3>Lorem ipsum dolor</h3>
+            </div>
+          </div>
+          <div class="collection-item" id="collection-3">
+            <div class="hover">
+              <h3>Lorem ipsum dolor</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner">
+        <span class="text-first">ac rhoncus neque eros nec.</span>
+        <span class="line"></span>
+        <span class="text-second">Cras quis nulla commodo aliquam lectus sed. blandit</span>
+        <button type="button" name="button">Lorem ipsum dolor</button>
+      </div>
+      <div class="instagram">
+        <h2>shop our instagram</h2>
+        <div class="carousel">
+          <div class="carousel_item">
+            <img src="images/carousel1.png" alt="">
+          </div>
+          <div class="carousel_item">
+            <img src="images/carousel2.png" alt="">
+          </div>
+          <div class="carousel_item">
+            <img src="images/carousel3.png" alt="">
+          </div>
+          <div class="carousel_item">
+            <img src="images/carousel4.png" alt="">
+          </div>
+          <div class="carousel_item">
+            <img src="images/heart-and-pearl-layered-necklace-silver.jpg" alt="">
+          </div>
+          <div class="carousel_item">
+            <img src="images/product2.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer_flex">
+        <div class="logo-container">
+          <div class="footer_logo">
+            <img src="images/logo.png" alt="logo">
+            <p>Fusce vehicula dolor<br> arcu, sit amet.</p>
+          </div>
+          <div class="flex mobile-social">
+            <a href="#"><img class="facebook" src="images/facebook-logo@2x.png" alt=""></a>
+            <a href="#"><img class="instagram" src="images/instagram-logo@2x.png" alt=""></a>
+            <a href="#"><img class="pinterest" src="images/pinterest-logo@2x.png" alt=""></a>
+            <a href="#"><img class="youtube" src="images/youtube-symbol@2x.png" alt=""></a>
+          </div>
+        </div>
+        <div class="footer_links">
+          <div class="vflex">
+            <h3>customer care</h3>
+            <div class="lists">
+              <ul>
+                <li><a href="#">Shipping & Delivery</a></li>
+                <li><a href="#">Returns & Exchanges</a></li>
+                <li><a href="#">Reward Program</a></li>
+                <li><a href="#">Brand Ambassador Program</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Order Status</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Chat with Customer Care</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="vflex">
+            <h3>about us</h3>
+            <div class="lists">
+              <ul>
+                <li><a href="#">Our Quality</a></li>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Our tree project</a></li>
+                <li><a href="#">Give back via kiva.org</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Our Collections</a></li>
+                <li><a href="#">Join our team</a></li>
+                <li><a href="#">Designers wanted!</a></li>
+                <li><a href="#">Bloggers</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer_social">
+          <h3>social</h3>
+          <div class="links">
+            <a href="#"><img class="facebook" src="images/facebook-logo@2x.png" alt=""></a>
+            <a href="#"><img class="instagram" src="images/instagram-logo@2x.png" alt=""></a>
+            <a href="#"><img class="pinterest" src="images/pinterest-logo@2x.png" alt=""></a>
+            <a href="#"><img class="youtube" src="images/youtube-symbol@2x.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer_copyright">
+        <span>© 2019 All rights reserved</span>
+        <nav>
+          <a href="#">Sitemap</a>
+          <a href="#">Terms and Conditions</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Legal Notice</a>
+        </nav>
+      </div>
+      <button type="button" class="up">&#x2303</button>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,261 @@
+$font_color1: #353535;
+$font_color2: #8d8d8d;
+$red_color: #fa4a4a;
+$blue_color: #030c44;
+$yellow_color: #edbc3c;
+$grey_color: #f9f9f9;
+$border_color: #e5e5e5;
+
+$semibold: 600;
+
+/*Spacings and measures */
+
+$main_width: 1440px;
+$xxs: 5px;
+$xs: 10px;
+$s: 15px;
+$m: 23px;
+$l: 32px;
+$xl: 54px;
+$xxl: 108px;
+$cont_padding: 135px;
+
+/* Mixins */
+
+@mixin basicfont {
+  color: $font_color1;
+  font-weight: $semibold;
+}
+
+@mixin hover {
+  color: $red_color;
+  cursor: pointer;
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin vflex {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-link:hover {
+  background-color: transparent!important
+}
+
+/* Homepage slider */
+
+body {
+  overflow-x: hidden;
+}
+
+.home-slider {
+  width: 100%;
+
+  h1 {
+    max-width: 470px;
+    letter-spacing: -0.5px;
+    line-height: 1.03;
+    font-size: 60px;
+  }
+
+  .subheader {
+    font-size: 16px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: 0.44px;
+  }
+
+  .slide-background {
+    width: 100%;
+    height: 100%;
+    width: 100%;
+    height: 547px;
+    padding-top: 163px;
+    margin-bottom: -163px;
+    top: -163px;
+    z-index: -1;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .slick-list {
+    overflow: visible;
+  }
+
+  #background-1 {
+    background-image: url('../images/background1.jpg')
+  }
+
+  #background-2 {
+    background-image: url('../images/background2.jpg')
+  }
+
+  #background-3 {
+    background-image: url('../images/background3.jpg')
+  }
+}
+
+.home-text {
+  font-family: 'Playfair Display';
+  font-size: 40px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: 1.25;
+  letter-spacing: normal;
+  max-width: 560px;
+  margin-top: $xxl;
+  margin-bottom: $xxl;
+  margin-left: -$l;
+  padding-left: $l;
+  border-left: 4px solid $red_color
+}
+
+/* Slider dots */
+.slick-dots {
+  bottom: $l;
+  width: auto;
+  left: 135px;
+  display: flex;
+  align-items: center;
+}
+
+.slick-dots li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0
+}
+
+.slick-dots li button {
+  width: 5px;
+  height: 5px;
+  padding: 0;
+  background-color: #999999;
+  border-radius: 50%
+}
+
+.slick-dots li button::before {
+  display: none
+}
+
+.slick-dots .slick-active button {
+  width: 10px;
+  height: 10px;
+  border: 1px solid $red_color;
+  background-color: transparent
+}
+
+.slick-dots li:first-child {
+  margin-left: 0
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  background: url('../images/banner.jpg') rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  background-size: cover;
+  @include vflex;
+  align-items: center;
+  padding: 129px 0;
+  margin-bottom: $xxl;
+
+  span {
+    color: #fff;
+    max-width: 770px;
+    text-align: center
+  }
+
+  button {
+    border: 1px solid #fff;
+    border-radius: 2px;
+    letter-spacing: 1.35px;
+    background-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    padding: $xs $l;
+    margin-top: $xl
+  }
+
+  button:hover {
+    background-color: #fff;
+    cursor: pointer;
+    color: #62d895;
+  }
+
+  .text-first {
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2.41px;
+  }
+
+  .text-second {
+    font-size: 60px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.08;
+    letter-spacing: -0.5px;
+  }
+
+  .line {
+    width: 73px;
+    height: 3px;
+    background-color: #62d895
+  }
+}
+
+.collection-item {
+  width: 100%;
+  max-width: 574px;
+  height: 274px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../images/back1.png');
+
+  .hover {
+    height: 0;
+    opacity: 0;
+    width: 100%;
+    background-color: rgba(237, 188, 60, 0.5);
+    transition: height 0.3s ease-in-out;
+
+    h3 {
+      color: #fff;
+      font-size: 34px;
+      font-weight: bold;
+      line-height: normal;
+      letter-spacing: 0.25px;
+    }
+  }
+}
+
+.collection-item:hover .hover {
+  @include vflex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 1;
+  height: 100%
+}
+
+#collection-1 {
+  background-image: url('../images/coll.jpg');
+  height: 574px;
+}
+
+#collection-2 {
+  background-image: url('../images/back1.png');
+}
+
+#collection-3 {
+  background-image: url('../images/back1.png');
+}

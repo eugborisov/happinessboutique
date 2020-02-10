@@ -17,6 +17,7 @@ $s: 15px;
 $m: 23px;
 $l: 32px;
 $xl: 54px;
+$xxl: 108px;
 $cont_padding: 135px;
 
 /* Other */
@@ -56,6 +57,16 @@ body {
 h1 {
   @include basicfont;
   font-size: 42px;
+}
+
+h2 {
+  height: 42px;
+  font-size: 34px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.25px;
 }
 
 ul {
@@ -105,6 +116,8 @@ header {
   margin: 0 auto;
   @include flex;
   flex-direction: column;
+  position: relative;
+  z-index: 1;
 
   .logo {
     height: 45px;
@@ -204,6 +217,8 @@ header {
   display: none;
   width: 100%;
   padding: 0 $s;
+  position: relative;
+  z-index: 1
 }
 
 .mobile-menu[aria-expanded="false"] {
@@ -275,14 +290,10 @@ header {
   height: 1px;
   margin-bottom: 4px;
   position: relative;
-
   background: #fff;
   border-radius: 3px;
-
   z-index: 1;
-
   transform-origin: 4px 0px;
-
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
