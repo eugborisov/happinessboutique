@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Happiness Boutique - Product page</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+  <link rel="stylesheet" href="raty/jquery.raty.css">
+  <link rel="stylesheet" href="scss/custom.css">
+  <link rel="stylesheet" href="scss/product.css">
+</head>
+  <body>
+    <header>
+      <div class="flex-100">
+          <img class="logo" src="images/logo.png" alt="logo">
+            <form class="form-inline desktop-search">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+          <div class="profile-desktop">
+            <a href="#">DE</a>
+            <a href="#"><img src="images/heart@3x.png" alt=""> 0</a>
+            <a href="#"><img src="images/shopping-cart@3x.png" alt=""> 1</a>
+            <a href="#"><img src="images/profile@3x.png" alt=""></a>
+            <a href="#" class="search-icon"><img src="images/search@2x.png" alt=""></a>
+          </div>
+          <div class="profile-mobile">
+            <a href="#"><img src="images/heart@3x.png" alt=""></a>
+            <a href="#"><img src="images/profile@3x.png" alt=""></a>
+            <a href="#"><img src="images/shopping-cart@3x.png" alt=""></a>
+          </div>
+      </div>
+      <nav class="desktop">
+        <ul class="nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">New</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Collection</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Trending</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Necklaces</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Rings</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Bracelets</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Earings</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Jewelry Set</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Shop Instagram</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Happy Gallery</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Style</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="mobile-menu" aria-expanded="false">
+      <div class="subheader">
+        <div class="menu-icon">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <form class="form-inline mobile-search input-group-sm">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+        <a href="#" class="search-icon"><img src="images/search@3x.png"/></a>
+      </div>
+      <ul>
+        <li class="bb"><div><img src="images/user@2x.png"/></div> My Account</li>
+        <li class="bb"><div><img src="images/united-kingdom@2x.png"/></div> English</li>
+        <li class="bb"><div><img src="images/coin@2x.png"/></div> EUR Currency</li>
+        <li><div><img src="images/sun@2x.png"/></div> New</li>
+        <li><div><img src="images/shopping-bag@2x.png"/></div> Collection</li>
+        <li><div><img src="images/trending@2x.png"/></div> Trending</li>
+        <li><div><img src="images/necklace@2x.png"/></div> Necklaces</li>
+        <li><div><img src="images/two-earrings@2x.png"/></div> Earrings</li>
+        <li><div><img src="images/bracelet@2x.png"/></div> Bracelets</li>
+        <li><div><img src="images/diamond-ring@2x.png"/></div> Rings</li>
+        <li><div><img src="images/group@2x.png"/></div> Jewelry Set</li>
+        <li><div><img src="images/instagram@2x.png"/></div> Shop Instagram</li>
+        <li><div><img src="images/happygallery.png"/></div> Happy Gallery</li>
+        <li><div><img src="images/offer@2x.png"/></div> Sale</li>
+      </ul>
+    </div>
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">happiness boutique</a></li>
+          <li class="breadcrumb-item"><a href="#">jewelry</a></li>
+          <li class="breadcrumb-item active" aria-current="page">jewelry set</li>
+        </ol>
+      </nav>
+      <div class="product">
+        <div class="flex left-side">
+          <div class="slider">
+            <div class="vertical">
+                <img src="images/carousel1.png" alt="">
+                <img src="images/carousel2.png" alt="">
+                <img src="images/carousel3.png" alt="">
+                <img src="images/carousel3.png" alt="">
+            </div>
+          </div>
+          <div class="main">
+            <img src="images/product.png" alt="">
+          </div>
+        </div>
+        <div class="info">
+          <h3>Buddha Bracelet Silver</h3>
+          <div class="rating">
+            <span class="number">4.7</span>
+          </div>
+          <div class="prices">
+            <span class="old">22,90 €</span>
+            <span class="new">22,90 €</span>
+          </div>
+          <span class="small">Incl. VAT</span>
+          <div class="links">
+            <h4>share:</h4>
+            <a href="#"><img class="" src="images/facebook-logo@2x.png" alt=""></a>
+            <a href="#"><img class="" src="images/twitter@3x.png" alt=""></a>
+            <a href="#"><img class="" src="images/pinterest-logo@2x.png" alt=""></a>
+          </div>
+          <div class="description">
+            Made entirely from stainless steel, this bracelet consists of a thin chain made from small.
+            <a href="#">Read More</a>
+          </div>
+          <div class="details">
+            <h4>details</h4>
+          </div>
+          <div class="properties filters">
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="quantityButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  quantity
+                </button>
+                <span class="quantity">2</span>
+              <div class="dropdown-menu" aria-labelledby="quantityButton">
+                <a class="dropdown-item" href="#">1</a>
+                <a class="dropdown-item" href="#">2</a>
+                <a class="dropdown-item" href="#">3</a>
+                <a class="dropdown-item" href="#">4</a>
+                <a class="dropdown-item" href="#">5</a>
+                <a class="dropdown-item" href="#">6</a>
+                <a class="dropdown-item" href="#">7</a>
+                <a class="dropdown-item" href="#">8</a>
+                <a class="dropdown-item" href="#">9</a>
+              </div>
+            </div>
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="colorMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  color
+                </button>
+                <span class="color"><span class="icon" id="silver"></span>Silver</span>
+              <div class="dropdown-menu" aria-labelledby="colorMenuButton">
+                <a class="dropdown-item" href="#"><span class="icon" id="silver"></span>Silver</a>
+                <a class="dropdown-item" href="#"><span class="icon" id="gold"></span>Gold</a>
+                <a class="dropdown-item" href="#"><span class="icon" id="black"></span>Black</a>
+                <a class="dropdown-item" href="#"><span class="icon" id="vintage-silver"></span>Vintage Silver</a>
+                <a class="dropdown-item" href="#"><span class="icon" id="blue-silver"></span>Blue Silver</a>
+              </div>
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="button-main" type="button">add to cart</button>
+            <button class="bookmark" type="button">
+              <img src="images/heart-red.png" alt="">
+            </button>
+          </div>
+          <h4><a href="#" data-toggle="modal" data-target="#info">Jewellery care info</a></h4>
+          <!-- Modal -->
+          <div class="modal fade" id="info" tabindex="-1" role="dialog" aria-labelledby="infoLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 id="infoLabel">Jewellery care info</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="" alt="">
+      </div>
+      <div class="benefits grid">
+        <div class="item">
+          <img src="images/package-1@3x.png" alt="">
+          <span>Free worldwide shipping</span>
+        </div>
+        <div class="item">
+          <img src="images/refresh@3x.png" alt="">
+          <span>60 days return</span>
+        </div>
+        <div class="item">
+          <img src="images/ecology@3x.png" alt="">
+          <span>Plant a tree</span>
+        </div>
+        <div class="item">
+          <img src="images/piggy-bank@3x.png" alt="">
+          <span>Earn 19 Reward Points</span>
+        </div>
+      </div>
+      <div class="">
+        <div class="relative">
+          <h2 class="uppercase"><span>#HAPPINESSBTQ</span> ON INSTAGRAM AND PINTEREST</h2>
+          <div class="paginator">
+            <h4>page</h4>
+            <nav aria-label="Page navigation">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="grid instagram">
+          <img src="images/bitmap-copy-14@3x.png" alt="">
+          <img src="images/bitmap-copy-14@3x.png" alt="">
+          <img src="images/bitmap-copy-14@3x.png" alt="">
+          <img src="images/bitmap-copy-14@3x.png" alt="">
+          <img src="images/bitmap-copy-14@3x.png" alt="">
+          <img src="images/bitmap-copy-14@3x.png" alt="">
+          <img src="images/bitmap-copy-14@3x.png" alt="">
+          <img src="images/bitmap-copy-14@3x.png" alt="">
+        </div>
+      </div>
+      <div class="reviews">
+        <div class="no-reviews">
+          <span>Nor reviews for the moment</span>
+          <a href="#" data-toggle="modal" data-target="#review">Be the first write to review</a>
+        </div>
+        <div class="nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">3 reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#review">Write a review</a>
+          </li>
+          <!-- Modal -->
+          <div class="modal fade" id="review" tabindex="-1" role="dialog" aria-labelledby="reviewLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 id="reviewLabel">write a review</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form class="" action="#" method="post">
+                    <div class="form-group">
+                      <label for="title">Title</label>
+                      <input type="text" class="form-control" id="title">
+                    </div>
+                    <div class="form-group">
+                      <label for="review">Review</label>
+                      <textarea class="form-control" id="review" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="">What is your opinion on:</label>
+                      <div class="rating-review">
+
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">cancel</button>
+                  <button type="button" class="btn btn-primary">save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="review">
+          <img class="avatar" src="images/avatar.png" alt="">
+          <div class="vflex">
+            <span>Kylie Rossen</span>
+            <div class="rating">
+              <span class="number">4.7</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <button type="button">translate</button>
+          </div>
+        </div>
+        <div class="review">
+          <img class="avatar" src="images/avatar.png" alt="">
+          <div class="vflex">
+            <span>Kylie Rossen</span>
+            <div class="rating">
+              <span class="number">4.7</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <button type="button">translate</button>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <h2 class="uppercase">CUSTOMERS WHO BOUGHT THIS ITEM ALSO BOUGHT</h2>
+        <div class="grid">
+          <div class="grid_item">
+            <span class="badge red">sale</span>
+            <img src="images/product2.png">
+            <div class="grid_title">
+              <span>Glam Crystal Glass Tassel Earrings</span>
+              <img src="images/heart.svg">
+            </div>
+            <div class="grid_price">
+              <span class="old-price">22,90</span>
+              <span class="new-price">22,90</span>
+            </div>
+          </div>
+          <div class="grid_item">
+            <span class="badge red">sale</span>
+            <img src="images/product2.png">
+            <div class="grid_title">
+              <span>Glam Crystal Glass Tassel Earrings</span>
+              <img src="images/heart.svg">
+            </div>
+            <div class="grid_price">
+              <span class="old-price">22,90</span>
+              <span class="new-price">22,90</span>
+            </div>
+          </div>
+          <div class="grid_item">
+            <span class="badge red">sale</span>
+            <img src="images/product2.png">
+            <div class="grid_title">
+              <span>Glam Crystal Glass Tassel Earrings</span>
+              <img src="images/heart.svg">
+            </div>
+            <div class="grid_price">
+              <span class="old-price">22,90</span>
+              <span class="new-price">22,90</span>
+            </div>
+          </div>
+          <div class="grid_item">
+            <span class="badge red">sale</span>
+            <img src="images/product2.png">
+            <div class="grid_title">
+              <span>Glam Crystal Glass Tassel Earrings</span>
+              <img src="images/heart.svg">
+            </div>
+            <div class="grid_price">
+              <span class="old-price">22,90</span>
+              <span class="new-price">22,90</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="description">
+      <h2><span>Happiness Boutique's</span> style is modern classic with a charming vintage touch.</h2>
+      <p>Fashion jewelry inspired by modern art and vintage pieces.<br>Happiness Boutique provides a pleasant and engaging shopping experience by building a positive, connected, and fun community. We are driven by building a soulful brand, spreading the positive vibe, and making a difference. Check out our blog to take part in our fun and creative social initiatives.</p>
+      <p>We offer worldwide free shipping without a minimum purchase. Shop our delicate necklaces, earrings, delicate bracelets & fashion rings.</p>
+    </div>
+  </div>
+  <div class="subscription">
+    <h2>Subscribe now</h2>
+    <form class="form-inline">
+      <input type="email" class="form-control mb-2 mr-sm-2" id="emailInput" placeholder="Enter your email">
+      <button type="submit" class="btn btn-primary mb-2">subscribe</button>
+    </form>
+  </div>
+  <footer>
+    <div class="footer_flex">
+      <div class="logo-container">
+        <div class="footer_logo">
+          <img src="images/logo.png" alt="logo">
+          <p>Fusce vehicula dolor<br> arcu, sit amet.</p>
+        </div>
+        <div class="flex mobile-social">
+          <a href="#"><img class="facebook" src="images/facebook-logo@2x.png" alt=""></a>
+          <a href="#"><img class="instagram" src="images/instagram-logo@2x.png" alt=""></a>
+          <a href="#"><img class="pinterest" src="images/pinterest-logo@2x.png" alt=""></a>
+          <a href="#"><img class="youtube" src="images/youtube-symbol@2x.png" alt=""></a>
+        </div>
+      </div>
+      <div class="footer_links">
+        <div class="vflex">
+          <h3>customer care</h3>
+          <div class="lists">
+            <ul>
+              <li><a href="#">Shipping & Delivery</a></li>
+              <li><a href="#">Returns & Exchanges</a></li>
+              <li><a href="#">Reward Program</a></li>
+              <li><a href="#">Brand Ambassador Program</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Order Status</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Chat with Customer Care</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="vflex">
+          <h3>about us</h3>
+          <div class="lists">
+            <ul>
+              <li><a href="#">Our Quality</a></li>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Our tree project</a></li>
+              <li><a href="#">Give back via kiva.org</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Our Collections</a></li>
+              <li><a href="#">Join our team</a></li>
+              <li><a href="#">Designers wanted!</a></li>
+              <li><a href="#">Bloggers</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer_social">
+        <h3>social</h3>
+        <div class="links">
+          <a href="#"><img class="facebook" src="images/facebook-logo@2x.png" alt=""></a>
+          <a href="#"><img class="instagram" src="images/instagram-logo@2x.png" alt=""></a>
+          <a href="#"><img class="pinterest" src="images/pinterest-logo@2x.png" alt=""></a>
+          <a href="#"><img class="youtube" src="images/youtube-symbol@2x.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer_copyright">
+      <span>© 2019 All rights reserved</span>
+      <nav>
+        <a href="#">Sitemap</a>
+        <a href="#">Terms and Conditions</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Legal Notice</a>
+      </nav>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script type="text/javascript" src="raty/jquery.raty.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

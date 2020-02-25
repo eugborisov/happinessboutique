@@ -1,0 +1,100 @@
+/*Spacings and measures */
+/* Other */
+/* Mixins */
+.nav {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 23px; }
+  .nav a {
+    padding: 15px 23px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #353535; }
+  .nav a:hover {
+    color: #fa4a4a;
+    cursor: pointer; }
+  .nav a:first-child {
+    padding-left: 0; }
+
+.tags li {
+  border: 1px solid #e5e5e5;
+  padding: 3px 8px;
+  color: #8d8d8d;
+  margin-right: 23px;
+  margin-bottom: 15px;
+  display: inline-block; }
+.tags .tag_name {
+  padding-right: 15px;
+  vertical-align: middle; }
+.tags .tag_cross {
+  font-size: 16px;
+  vertical-align: middle; }
+.tags .tag_cross:hover {
+  color: #fa4a4a;
+  cursor: pointer; }
+
+.collections {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 54px; }
+
+.collection_item {
+  flex: 0 0 calc(50% - 15px);
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.collection_item:first-child {
+  background-image: url("../images/back1.png"); }
+
+.collection_item:last-child {
+  background-image: url("../images/back2.png"); }
+
+.collection_item span {
+  font-size: 42px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 54px; }
+.collection_item button {
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: transparent;
+  width: 175px;
+  text-align: center;
+  padding: 15px 0; }
+.collection_item button:hover {
+  background-color: #fff;
+  color: #fa4a4a;
+  cursor: pointer; }
+
+.paginator nav {
+  margin: 0 auto;
+  width: fit-content; }
+.paginator .page-link {
+  border: 0;
+  color: #8d8d8d;
+  font-weight: 600; }
+.paginator .page-link:hover, .paginator .active .page-link {
+  background-color: #fa4a4a;
+  border: 0;
+  color: #fff; }
+.paginator .page-link:focus {
+  box-shadow: none; }
+.paginator .page-link[aria-label="Previous"], .paginator .page-link[aria-label="Next"] {
+  border: 1px solid #e5e5e5;
+  border-radius: 0;
+  position: relative;
+  z-index: 2; }
+.paginator .page-link[aria-label="Previous"] {
+  margin-right: 32px; }
+.paginator .page-link[aria-label="Next"] {
+  margin-left: 32px; }
+
+/*# sourceMappingURL=category.css.map */
