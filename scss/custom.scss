@@ -69,14 +69,32 @@ h2 {
   letter-spacing: 0.25px;
 }
 
+h2.uppercase {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.04;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
+button {
+  text-transform: uppercase;
+  border-radius: 0;
+}
+
 button, button:focus {
   outline: none!important
+}
+
+a {
+  color: $red_color
 }
 
 a:focus, a:active, a:hover {
@@ -112,6 +130,24 @@ input[type="search"]:focus {
 
 .relative {
   position: relative;
+}
+
+.btn {
+  border-radius: 0!important;
+  padding-left: $m;
+  padding-right: $m
+}
+
+.btn-secondary {
+  background-color: #fff;
+  color: $font_color2;
+  border: 1px solid $border_color
+}
+
+.btn-primary {
+  background-color: $red_color;
+  border: 0;
+  color: #fff;
 }
 
 header {
@@ -710,6 +746,31 @@ header {
 
 .grid_item.big:hover img {
   transform: scale(1.025);
+}
+
+.benefits {
+
+  .item {
+    @include vflex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 43px;
+      width: auto;
+      object-fit: contain;
+      margin-bottom: $xs
+    }
+
+    span {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.56;
+      text-align: center;
+      color: $font_color1;
+      text-transform: uppercase;
+    }
+  }
 }
 
 .instagram {

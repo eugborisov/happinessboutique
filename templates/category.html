@@ -1,0 +1,302 @@
+<div class="container">
+  <h1>Trending</h1>
+  <span class="line"></span>
+  <p>Welcome to our Collection category, where each group of jewelry has been carefully curated to fit <br>under a specific theme, making it easy for you to find exactly what you’re looking for.</p>
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">ocean</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="#">adventure</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">nature</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">minimalist</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">moon and star</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">hearts and love</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">faith</a>
+    </li>
+  </ul>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">happiness boutique</a></li>
+      <li class="breadcrumb-item"><a href="#">jewelry</a></li>
+      <li class="breadcrumb-item active" aria-current="page">jewelry set</li>
+    </ol>
+  </nav>
+  <div class="filters">
+    <div class="price">
+      <span class="name">price</span>
+      <div class="range-slider-container">
+        <span class="price-value" id="from"></span>
+        <input type="text" class="js-range-slider" name="my_range" value="" />
+        <span class="price-value" id="to"></span>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="btn dropdown-toggle" type="button" id="colorMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        color
+      </button>
+      <div class="dropdown-menu" aria-labelledby="colorMenuButton">
+        <a class="dropdown-item" href="#"><span class="icon" id="silver"></span><span class="filters_name">Silver</span> - 43</a>
+        <a class="dropdown-item" href="#"><span class="icon" id="gold"></span><span class="filters_name">Gold</span> - 17</a>
+        <a class="dropdown-item" href="#"><span class="icon" id="black"></span><span class="filters_name">Black</span> - 21</a>
+        <a class="dropdown-item" href="#"><span class="icon" id="vintage-silver"></span><span class="filters_name">Vintage Silver</span> - 28</a>
+        <a class="dropdown-item" href="#"><span class="icon" id="blue-silver"></span><span class="filters_name">Blue Silver</span> - 6</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="btn dropdown-toggle" type="button" id="styleMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        style
+      </button>
+      <div class="dropdown-menu" aria-labelledby="styleMenuButton">
+        <div class="custom-control custom-checkbox">
+          <input class="custom-control-input" type="checkbox" value="" id="styleCheck1">
+          <label class="custom-control-label" for="styleCheck1">
+            Modern Geometric
+          </label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input class="custom-control-input" type="checkbox" value="" id="styleCheck2">
+          <label class="custom-control-label" for="styleCheck2">
+            Minimalist Style
+          </label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input class="custom-control-input" type="checkbox" value="" id="styleCheck3">
+          <label class="custom-control-label" for="styleCheck3">
+            Feminine Classy
+          </label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input class="custom-control-input" type="checkbox" value="" id="styleCheck4">
+          <label class="custom-control-label" for="styleCheck4">
+            Timeless & Neutral Colors
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="btn dropdown-toggle" type="button" id="trendsMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        top trends
+      </button>
+      <div class="dropdown-menu" aria-labelledby="trendsMenuButton">
+        <div class="custom-control custom-checkbox">
+          <input class="custom-control-input" type="checkbox" value="" id="trendsCheck1">
+          <label class="custom-control-label" for="trendsCheck1">
+            Rose Gold Jewellery
+          </label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input class="custom-control-input" type="checkbox" value="" id="trendsCheck2">
+          <label class="custom-control-label" for="trendsCheck2">
+            Futuristic Geometric
+          </label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input class="custom-control-input" type="checkbox" value="" id="trendsCheck3">
+          <label class="custom-control-label" for="trendsCheck3">
+            Crescent Moon & Star
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="btn dropdown-toggle" type="button" id="sortMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        sort by newest
+      </button>
+      <div class="dropdown-menu" aria-labelledby="sortMenuButton">
+        <a class="dropdown-item filter-item" href="#">Price: lowest first</a>
+        <a class="dropdown-item filter-item" href="#">Price: higest first</a>
+        <a class="dropdown-item filter-item" href="#">In-stock first</a>
+      </div>
+    </div>
+  </div>
+  <div class="tags">
+    <ul>
+    </ul>
+  </div>
+  <div class="grid">
+    <div class="grid_item big">
+      <span class="badge yellow">new</span>
+      <img class="product-image" src="images/big.jpg">
+        <div class="grid_title">
+          <span>Sea Shell Necklace and Bracelet Set</span>
+          <img src="images/heart.svg">
+        </div>
+        <div class="grid_price">
+          <span class="old-price">22,90</span>
+          <span class="new-price">22,90</span>
+        </div>
+    </div>
+    <div class="grid_item">
+      <span class="badge red">sale</span>
+      <img src="images/heart-and-pearl-layered-necklace-silver.jpg">
+      <div class="grid_title">
+        <span>Sea Shell Necklace Let's Have a Long Name so It Takes Two Rows</span>
+        <img src="images/heart.svg">
+      </div>
+      <div class="grid_price">
+        <span class="old-price">22,90</span>
+        <span class="new-price">22,90</span>
+      </div>
+    </div>
+    <div class="grid_item">
+      <span class="badge"></span>
+      <img src="images/heart-and-pearl-layered-necklace-silver.jpg">
+      <div class="grid_title">
+        <span>Sea Shell Necklace and Bracelet Set</span>
+        <img src="images/heart.svg">
+      </div>
+      <div class="grid_price">
+        <span class="just-price">22,90</span>
+      </div>
+    </div>
+    <div class="grid_item">
+      <span class="badge"></span>
+      <img src="images/heart-and-pearl-layered-necklace-silver.jpg">
+      <div class="grid_title">
+        <span>Sea Shell Necklace and Bracelet Set</span>
+        <img src="images/heart.svg">
+      </div>
+      <div class="grid_price">
+        <span class="old-price">22,90</span>
+        <span class="new-price">22,90</span>
+      </div>
+    </div>
+    <div class="grid_item">
+      <span class="badge yellow">new</span>
+      <img src="images/heart-and-pearl-layered-necklace-silver.jpg">
+      <div class="grid_title">
+        <span>Sea Shell Necklace and Bracelet Set</span>
+        <img src="images/heart.svg">
+      </div>
+      <div class="grid_price">
+        <span class="old-price">22,90</span>
+        <span class="new-price">22,90</span>
+      </div>
+    </div>
+    <div class="grid_item">
+      <span class="badge blue">only x left!</span>
+      <img src="images/heart-and-pearl-layered-necklace-silver.jpg">
+      <div class="grid_title">
+        <span>Sea Shell Necklace and Bracelet Set</span>
+        <img src="images/heart.svg">
+      </div>
+      <div class="grid_price">
+        <span class="old-price">22,90</span>
+        <span class="new-price">22,90</span>
+      </div>
+    </div>
+    <div class="grid_item">
+      <span class="badge"></span>
+      <img src="images/heart-and-pearl-layered-necklace-silver.jpg">
+      <div class="grid_title">
+        <span>Sea Shell Necklace and Bracelet Set</span>
+        <img src="images/heart.svg">
+      </div>
+      <div class="grid_price">
+        <span class="old-price">22,90</span>
+        <span class="new-price">22,90</span>
+      </div>
+    </div>
+    <div class="grid_item">
+      <span class="badge grey">out of stock</span>
+      <img src="images/heart-and-pearl-layered-necklace-silver.jpg">
+      <div class="grid_title">
+        <span>Sea Shell Necklace and Bracelet Set</span>
+        <img src="images/heart.svg">
+      </div>
+      <div class="grid_price">
+        <span class="old-price">22,90</span>
+        <span class="new-price">22,90</span>
+      </div>
+    </div>
+    <div class="grid_item">
+      <span class="badge grey">out of stock</span>
+      <img src="images/heart-and-pearl-layered-necklace-silver.jpg">
+      <div class="grid_title">
+        <span>Sea Shell Necklace and Bracelet Set</span>
+        <img src="images/heart.svg">
+      </div>
+      <div class="grid_price">
+        <span class="old-price">22,90</span>
+        <span class="new-price">22,90</span>
+      </div>
+    </div>
+  </div>
+  <div class="paginator">
+    <nav aria-label="Page navigation">
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only">Previous</span>
+          </a>
+        </li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only">Next</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="collections">
+    <div class="collection_item">
+        <span>Multi Stars Bracelet</span>
+        <button type="button">shop now</button>
+    </div>
+    <div class="collection_item">
+      <span>Minimalist Collection</span>
+      <button type="button">view collection</button>
+    </div>
+  </div>
+  <div class="instagram">
+    <h2>shop our instagram</h2>
+    <div class="carousel">
+      <div class="carousel_item">
+        <img src="images/carousel1.png" alt="">
+      </div>
+      <div class="carousel_item">
+        <img src="images/carousel2.png" alt="">
+      </div>
+      <div class="carousel_item">
+        <img src="images/carousel3.png" alt="">
+      </div>
+      <div class="carousel_item">
+        <img src="images/carousel4.png" alt="">
+      </div>
+      <div class="carousel_item">
+        <img src="images/heart-and-pearl-layered-necklace-silver.jpg" alt="">
+      </div>
+      <div class="carousel_item">
+        <img src="images/product2.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="description">
+    <h2><span>Happiness Boutique's</span> style is modern classic with a charming vintage touch.</h2>
+    <p>Fashion jewelry inspired by modern art and vintage pieces.<br>Happiness Boutique provides a pleasant and engaging shopping experience by building a positive, connected, and fun community. We are driven by building a soulful brand, spreading the positive vibe, and making a difference. Check out our blog to take part in our fun and creative social initiatives.</p>
+    <p>We offer worldwide free shipping without a minimum purchase. Shop our delicate necklaces, earrings, delicate bracelets & fashion rings.</p>
+  </div>
+</div>
+<div class="subscription">
+  <h2>Subscribe now</h2>
+  <form class="form-inline">
+    <input type="email" class="form-control mb-2 mr-sm-2" id="emailInput" placeholder="Enter your email">
+    <button type="submit" class="btn btn-primary mb-2">subscribe</button>
+  </form>
+</div>

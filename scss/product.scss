@@ -43,15 +43,6 @@ $cont_padding: 135px;
   flex-direction: column;
 }
 
-h2.uppercase {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.04;
-  letter-spacing: normal;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 h4 {
   font-size: 16px;
   font-weight: 600;
@@ -65,6 +56,10 @@ h4 {
 
 .product {
   @include flex;
+
+  .btn-primary {
+    margin-left: $m
+  }
 
   .vertical {
 
@@ -192,6 +187,7 @@ h4 {
   .filters {
     background-color: #fff;
     padding: 0;
+    display: flex!important;
 
     .dropdown {
         border: 1px solid $border_color;
@@ -223,7 +219,7 @@ h4 {
 
   .buttons {
     margin-bottom: $m;
-    
+
     .button-main {
       height: 50px;
       width: 79%;
@@ -251,29 +247,8 @@ h4 {
   }
 }
 
-.benefits {
-
-  .item {
-    @include vflex;
-    justify-content: center;
-    align-items: center;
-
-    img {
-      height: 43px;
-      width: auto;
-      object-fit: contain;
-      margin-bottom: $xs
-    }
-
-    span {
-      font-size: 16px;
-      font-weight: 600;
-      line-height: 1.56;
-      text-align: center;
-      color: $font_color1;
-      text-transform: uppercase;
-    }
-  }
+.product.mobile {
+  display: none
 }
 
 .instagram.grid {
@@ -432,16 +407,6 @@ h4 {
       text-decoration: underline;
     }
 
-    .btn-secondary {
-      background-color: #fafafa;
-      color: $font_color1
-    }
-
-    .btn-primary {
-      background-color: $red_color;
-      color: #fff;
-      margin-left: $m
-    }
   }
 
   .modal-header, .modal-body, .modal-footer {
@@ -454,4 +419,72 @@ h4 {
     font-size: 12px;
     color: $font_color1;
   }
+}
+
+@media screen and (max-width: 576px) {
+
+  .product.desktop {
+    display: none
+  }
+
+  .product.mobile {
+    display: flex;
+    flex-direction: column;
+
+    .info {
+      flex: 0 0 100%;
+      width: 100%;
+
+      .links {
+        align-items: flex-start;
+      }
+
+      .button-main {
+        width: calc(100% - 85px)
+      }
+    }
+
+    .left-side {
+      flex: 1 0 100%;
+
+      .slider {
+        flex: 0 0 23%;
+
+        img {
+          width: 100%;
+          height: auto
+        }
+
+        .slick-prev, .slick-next {
+          left: 35%;
+          width: 25px;
+          height: 25px;
+        }
+
+        .slick-prev:before, .slick-next:before {
+          font-size: 14px
+        }
+
+      }
+
+      .main {
+        flex: 0 0 77%;
+        margin-left: 12px;
+      }
+    }
+  }
+
+  .paginator {
+    display: none
+  }
+
+  .instagram.grid {
+    display: block;
+
+    img {
+      max-width: 50%;
+      max-height: 50%
+    }
+  }
+
 }

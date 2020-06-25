@@ -1,0 +1,201 @@
+/*Spacings and measures */
+/* Mixins */
+.grid_item .btn-primary {
+  height: 50px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: normal;
+  margin-right: 32px;
+  margin-top: 15px; }
+
+.banner {
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 32px; }
+
+.table {
+  font-size: 16px; }
+  .table th {
+    text-transform: uppercase; }
+  .table th, .table td {
+    border: 0 !important;
+    padding: 15px 0; }
+  .table th:last-child, .table td:last-child {
+    padding-right: 0;
+    text-align: right; }
+  .table thead tr {
+    border-top: 0;
+    border-bottom: 1px solid #e5e5e5 !important; }
+  .table tbody tr {
+    border: 0; }
+  .table tbody tr:last-child {
+    border-bottom: 1px solid #e5e5e5; }
+  .table tbody .remove {
+    font-size: 36px;
+    font-weight: 300;
+    padding: 0;
+    color: #8d8d8d; }
+  .table tbody .remove:hover {
+    cursor: pointer; }
+  .table tbody .quantity {
+    display: flex;
+    align-items: flex-start; }
+    .table tbody .quantity .arrows {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px; }
+      .table tbody .quantity .arrows button {
+        width: 15px;
+        height: 12px;
+        background-color: #fff;
+        border-color: #e5e5e5;
+        padding: 0;
+        line-height: 0.2;
+        color: #8d8d8d; }
+        .table tbody .quantity .arrows button img {
+          height: 60%;
+          width: auto; }
+      .table tbody .quantity .arrows .arrow-down {
+        transform: rotate(180deg);
+        margin-top: 3px; }
+  .table .cell-img {
+    display: flex; }
+    .table .cell-img img {
+      width: 200px;
+      height: 200px;
+      margin-right: 23px; }
+    .table .cell-img .color {
+      color: #8d8d8d; }
+
+.table-footer {
+  margin-bottom: 108px; }
+  .table-footer .info {
+    display: flex;
+    justify-content: space-between; }
+    .table-footer .info .calc span {
+      font-size: 18px;
+      font-weight: 600;
+      color: #8d8d8d; }
+    .table-footer .info .calc a {
+      display: block;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 10px; }
+    .table-footer .info .calc .flex {
+      margin-bottom: 10px; }
+    .table-footer .info .calc .total span:first-child {
+      color: #353535; }
+    .table-footer .info .calc .total span:last-child {
+      color: #fa4a4a; }
+  .table-footer .sign-in {
+    text-transform: uppercase;
+    text-align: right;
+    display: block;
+    font-size: 14px !important;
+    color: #8d8d8d !important;
+    margin: 23px 0 15px 0; }
+    .table-footer .sign-in a {
+      display: inline-block !important; }
+  .table-footer .buttons {
+    display: flex;
+    justify-content: flex-end; }
+    .table-footer .buttons button {
+      min-width: 200px;
+      letter-spacing: 1.5px; }
+    .table-footer .buttons button:first-child {
+      margin-right: 32px; }
+  .table-footer .coupon span {
+    font-size: 16px;
+    color: #8d8d8d; }
+  .table-footer .coupon input {
+    width: 250px;
+    height: 30px;
+    border: 1px solid #e5e5e5; }
+  .table-footer .coupon button {
+    height: 30px;
+    width: 120px;
+    line-height: 1; }
+
+.modal-container {
+  position: relative;
+  width: 100%; }
+
+.modal-open .modal {
+  display: flex !important;
+  justify-content: flex-end;
+  overflow: auto; }
+
+.modal-dialog {
+  width: 400px;
+  top: 60px;
+  right: 70px;
+  margin: 0; }
+
+.modal-header, .modal-footer {
+  padding: 32px; }
+
+.modal-header h5 {
+  vertical-align: center;
+  margin: 0; }
+
+.modal-body {
+  padding: 15px 32px 0 32px;
+  max-height: 300px;
+  overflow: scroll; }
+  .modal-body .table tbody tr:last-child {
+    border-bottom: 0; }
+  .modal-body .table .modal-quantity {
+    font-size: 18px;
+    color: #8d8d8d;
+    padding-right: 15px; }
+  .modal-body .table .cell-img {
+    font-size: 14px; }
+
+.modal-footer > * {
+  margin: 0; }
+
+.modal-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
+  .modal-footer span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #8d8d8d; }
+  .modal-footer .total span {
+    color: #353535; }
+  .modal-footer .flex {
+    width: 100%; }
+  .modal-footer .btn-primary {
+    width: 100%;
+    height: 45px;
+    letter-spacing: 2px;
+    margin-top: 23px; }
+
+.modal-open {
+  overflow: visible; }
+
+.modal-backdrop {
+  background-color: transparent; }
+
+/* Tooltips */
+.tooltip {
+  font-family: 'SFProText';
+  box-shadow: 0 2px 7px -3px rgba(0, 0, 0, 0.5);
+  padding: 0; }
+
+.tooltip.show {
+  opacity: 1; }
+
+.tooltip-inner {
+  background-color: #fff;
+  color: #8d8d8d;
+  text-align: left;
+  padding: 10px; }
+
+.arrow::before {
+  display: none; }
+
+/*# sourceMappingURL=cart.css.map */

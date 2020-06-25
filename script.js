@@ -138,6 +138,12 @@ $(document).ready(function() {
         $('.up').hide();
       }
     });
+  } else {
+    $('.grid.instagram').slick({
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 1
+    })
   }
 
   $('.up').on('click', function(e) {
@@ -145,7 +151,7 @@ $(document).ready(function() {
     $('html, body').animate({scrollTop:0}, '300');
   });
 
-  $('.rating').raty({
+  if ($('.rating').length > 0) $('.rating').raty({
     start: 3.3,
     showHalf: true,
     path: 'raty/images/',
@@ -154,7 +160,8 @@ $(document).ready(function() {
     readOnly: true
   });
 
-  $('.rating-review').raty({
+
+  if ($('.rating-review').length > 0) $('.rating-review').raty({
     start: 3.3,
     showHalf: true,
     path: 'raty/images/',
@@ -166,5 +173,29 @@ $(document).ready(function() {
 
   $('.vertical img').click(function() {
     $('.main img').attr('src', $(this).attr('src'))
-  })
+  });
+
+  $('[data-toggle="tooltip"]').tooltip();
+
+  if ($('.table').length > 0) {
+
+    $('.remove').click(function() {
+      $(this).closest('tr').remove();
+    });
+
+    $('.table .quantity').each(function() {
+      if (Number($(this).children('span').text()) === 1) {
+        $(this).find('.arrow-down').hide();
+      }
+    });
+
+    $('.table .quantity button').click(function() {
+      let span = $(this).closest('.arrows').siblings('span');
+      let oldAmount = Number(span.text());
+      let newAmount = ($(this).hasClass('arrow-up')) ? oldAmount + 1 : oldAmount - 1;
+      span.text(newAmount);
+      if (newAmount === 1) $(this).hide();
+      else if (newAmount === 2) $(this).siblings('.arrow-down').show();
+    });
+  }
 });

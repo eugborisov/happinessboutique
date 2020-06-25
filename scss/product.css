@@ -1,13 +1,5 @@
 /*Spacings and measures */
 /* Mixins */
-h2.uppercase {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.04;
-  letter-spacing: normal;
-  text-align: center;
-  text-transform: uppercase; }
-
 h4 {
   font-size: 16px;
   font-weight: 600;
@@ -20,6 +12,8 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  .product .btn-primary {
+    margin-left: 23px; }
   .product .vertical .slick-track {
     display: flex;
     flex-direction: column;
@@ -100,7 +94,8 @@ h4 {
       color: #fa4a4a; }
   .product .filters {
     background-color: #fff;
-    padding: 0; }
+    padding: 0;
+    display: flex !important; }
     .product .filters .dropdown {
       border: 1px solid #e5e5e5;
       width: auto;
@@ -142,23 +137,8 @@ h4 {
         height: 16px;
         object-fit: contain; }
 
-.benefits .item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .benefits .item img {
-    height: 43px;
-    width: auto;
-    object-fit: contain;
-    margin-bottom: 10px; }
-  .benefits .item span {
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 1.56;
-    text-align: center;
-    color: #353535;
-    text-transform: uppercase; }
+.product.mobile {
+  display: none; }
 
 .instagram.grid img {
   max-width: 270px;
@@ -267,18 +247,51 @@ h4 {
     letter-spacing: 1.14px; }
   .modal .modal-footer .btn:hover {
     text-decoration: underline; }
-  .modal .modal-footer .btn-secondary {
-    background-color: #fafafa;
-    color: #353535; }
-  .modal .modal-footer .btn-primary {
-    background-color: #fa4a4a;
-    color: #fff;
-    margin-left: 23px; }
 .modal .modal-header, .modal .modal-body, .modal .modal-footer {
   padding: 23px; }
 
 .rating .number {
   font-size: 12px;
   color: #353535; }
+
+@media screen and (max-width: 576px) {
+  .product.desktop {
+    display: none; }
+
+  .product.mobile {
+    display: flex;
+    flex-direction: column; }
+    .product.mobile .info {
+      flex: 0 0 100%;
+      width: 100%; }
+      .product.mobile .info .links {
+        align-items: flex-start; }
+      .product.mobile .info .button-main {
+        width: calc(100% - 85px); }
+    .product.mobile .left-side {
+      flex: 1 0 100%; }
+      .product.mobile .left-side .slider {
+        flex: 0 0 23%; }
+        .product.mobile .left-side .slider img {
+          width: 100%;
+          height: auto; }
+        .product.mobile .left-side .slider .slick-prev, .product.mobile .left-side .slider .slick-next {
+          left: 35%;
+          width: 25px;
+          height: 25px; }
+        .product.mobile .left-side .slider .slick-prev:before, .product.mobile .left-side .slider .slick-next:before {
+          font-size: 14px; }
+      .product.mobile .left-side .main {
+        flex: 0 0 77%;
+        margin-left: 12px; }
+
+  .paginator {
+    display: none; }
+
+  .instagram.grid {
+    display: block; }
+    .instagram.grid img {
+      max-width: 50%;
+      max-height: 50%; } }
 
 /*# sourceMappingURL=product.css.map */
